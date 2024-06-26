@@ -28,6 +28,13 @@ public class OperationsOnArraysAndLists {
         }
     }
 
+    /**
+     *
+     * @param array array to search trough, must contain at least two numbers
+     * @param target target number
+     * @return returns array with three items, first digit, second digit and target number respectively
+     * @throws Exception
+     */
     public int[] twoSumToTarget(int[] array, int target) throws Exception{
         if(array.length < 2){
             throw new Exception("Array contains less than 2 elements");
