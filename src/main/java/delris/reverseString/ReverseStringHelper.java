@@ -5,25 +5,31 @@ import java.util.Arrays;
 public class ReverseStringHelper {
 
 
-    public String reverseStringWithStringBuilder(String stringToReversed) {
-        StringBuilder stringBuilder = new StringBuilder(stringToReversed);
+    public String reverseStringWithStringBuilder(String stringToBeReversed) throws Exception {
+        if(stringToBeReversed == null || stringToBeReversed.isBlank() || stringToBeReversed.isEmpty()){
+            throw new Exception("Input string incorrect");
+        }
+        StringBuilder stringBuilder = new StringBuilder(stringToBeReversed);
         return stringBuilder.reverse().toString();
     }
 
-    public String reverseStringWithLoop(String stringToReversed) throws Exception {
+    public String reverseStringWithLoop(String stringToBeReversed) throws Exception {
 
-        if(stringToReversed == null || stringToReversed.isBlank() || stringToReversed.isEmpty()){
+        if(stringToBeReversed == null || stringToBeReversed.isBlank() || stringToBeReversed.isEmpty()){
             throw new Exception("Input string incorrect");
         }
-        char[] result = new char[stringToReversed.length()];
+        char[] result = new char[stringToBeReversed.length()];
         int j = 0;
-        for (int i = stringToReversed.length() - 1; i >= 0; i--) {
-            result[j] = stringToReversed.charAt(i);
+        for (int i = stringToBeReversed.length() - 1; i >= 0; i--) {
+            result[j] = stringToBeReversed.charAt(i);
         }
         return Arrays.toString(result);
     }
 
-    public String reverseStringWithXOROperation(String stringToBeReversed){
+    public String reverseStringWithXOROperation(String stringToBeReversed) throws Exception{
+        if(stringToBeReversed == null || stringToBeReversed.isBlank() || stringToBeReversed.isEmpty()){
+            throw new Exception("Input string incorrect");
+        }
         char[] chars = stringToBeReversed.toCharArray();
         char[] reversedChars = new char[stringToBeReversed.length()];
         for(int i =0 ; i< chars.length; i++){

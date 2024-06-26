@@ -13,7 +13,7 @@ class ReverseStringHelperTest {
     ReverseStringHelper reverseStringHelper = new ReverseStringHelper();
 
     @Test
-    void reverseStringWithStringBuilder() {
+    void reverseStringWithStringBuilder() throws Exception {
         for(String word : listOfStringsToBeReversed){
             assert reverseStringHelper.reverseStringWithStringBuilder(word).equals(reversedStrings.get(listOfStringsToBeReversed.indexOf(word)));
         }
@@ -27,7 +27,7 @@ class ReverseStringHelperTest {
     }
 
     @Test
-    void reverseStringWithXOROperation() {
+    void reverseStringWithXOROperation() throws Exception {
         for(String word : listOfStringsToBeReversed){
             assert reverseStringHelper.reverseStringWithXOROperation(word).equals(reversedStrings.get(listOfStringsToBeReversed.indexOf(word)));
         }
