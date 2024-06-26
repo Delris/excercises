@@ -7,8 +7,8 @@ import java.util.Arrays;
 
 class ReverseStringHelperTest {
 
-    private ArrayList<String> listOfStringsToBeReversed = new ArrayList<>(Arrays.asList("Buenos", "Rigcz", "Kajak", "Crispy", "Kraken", "ThisIsTestOfStringReversal", "soneuB", "zcgiR", "kajaK", "ypsirC", "nekarK", "lasreveRgnirtSfOtseTsIsihT"));
-    private ArrayList<String> reversedStrings = new ArrayList<>(Arrays.asList("soneuB", "zcgiR", "kajaK", "ypsirC", "nekarK", "lasreveRgnirtSfOtseTsIsihT", "Buenos", "Rigcz", "Kajak", "Crispy", "Kraken", "ThisIsTestOfStringReversal"));
+    private final ArrayList<String> listOfStringsToBeReversed = new ArrayList<>(Arrays.asList("Buenos", "Rigcz", "Kajak", "Crispy", "Kraken", "ThisIsTestOfStringReversal", "soneuB", "zcgiR", "kajaK", "ypsirC", "nekarK", "lasreveRgnirtSfOtseTsIsihT"));
+    private final ArrayList<String> reversedStrings = new ArrayList<>(Arrays.asList("soneuB", "zcgiR", "kajaK", "ypsirC", "nekarK", "lasreveRgnirtSfOtseTsIsihT", "Buenos", "Rigcz", "Kajak", "Crispy", "Kraken", "ThisIsTestOfStringReversal"));
 
     ReverseStringHelper reverseStringHelper = new ReverseStringHelper();
 
