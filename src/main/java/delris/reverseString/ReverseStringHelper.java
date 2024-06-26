@@ -5,6 +5,12 @@ import java.util.Arrays;
 public class ReverseStringHelper {
 
 
+    /**
+     *
+     * @param stringToBeReversed Accepts Non-NULL, Non-empty String object
+     * @return Reversed string object
+     * @throws Exception
+     */
     public String reverseStringWithStringBuilder(String stringToBeReversed) throws Exception {
         if(stringToBeReversed == null || stringToBeReversed.isBlank() || stringToBeReversed.isEmpty()){
             throw new Exception("Input string incorrect");
@@ -12,7 +18,12 @@ public class ReverseStringHelper {
         StringBuilder stringBuilder = new StringBuilder(stringToBeReversed);
         return stringBuilder.reverse().toString();
     }
-
+    /**
+     *
+     * @param stringToBeReversed Accepts Non-NULL, Non-empty String object
+     * @return Reversed string object
+     * @throws Exception
+     */
     public String reverseStringWithLoop(String stringToBeReversed) throws Exception {
 
         if(stringToBeReversed == null || stringToBeReversed.isBlank() || stringToBeReversed.isEmpty()){
@@ -25,7 +36,12 @@ public class ReverseStringHelper {
         }
         return Arrays.toString(result);
     }
-
+    /**
+     *
+     * @param stringToBeReversed Accepts Non-NULL, Non-empty String object
+     * @return Reversed string object
+     * @throws Exception
+     */
     public String reverseStringWithXOROperation(String stringToBeReversed) throws Exception{
         if(stringToBeReversed == null || stringToBeReversed.isBlank() || stringToBeReversed.isEmpty()){
             throw new Exception("Input string incorrect");
