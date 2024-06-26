@@ -1,10 +1,14 @@
-package delris.reverseString;
+package delris.operationsOnStrings.reverseString;
 
 import java.util.Arrays;
 
 public class ReverseStringHelper {
 
 
+    /**
+    @param stringToBeReversed Expecting Non-NULL, non-Empty String object to be reversed
+     @return Reversed text in String object
+     **/
     public String reverseStringWithStringBuilder(String stringToBeReversed) throws Exception {
         if(stringToBeReversed == null || stringToBeReversed.isBlank() || stringToBeReversed.isEmpty()){
             throw new Exception("Input string incorrect");
@@ -13,6 +17,10 @@ public class ReverseStringHelper {
         return stringBuilder.reverse().toString();
     }
 
+    /**
+     @param stringToBeReversed Expecting Non-NULL, non-Empty String object to be reversed
+     @return Reversed text in String object
+     **/
     public String reverseStringWithLoop(String stringToBeReversed) throws Exception {
 
         if(stringToBeReversed == null || stringToBeReversed.isBlank() || stringToBeReversed.isEmpty()){
@@ -26,6 +34,10 @@ public class ReverseStringHelper {
         return Arrays.toString(result);
     }
 
+    /**
+     @param stringToBeReversed Expecting Non-NULL, non-Empty String object to be reversed
+     @return Reversed text in String object
+     **/
     public String reverseStringWithXOROperation(String stringToBeReversed) throws Exception{
         if(stringToBeReversed == null || stringToBeReversed.isBlank() || stringToBeReversed.isEmpty()){
             throw new Exception("Input string incorrect");
