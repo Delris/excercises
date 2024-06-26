@@ -1,4 +1,4 @@
-package delris.reverseString;
+package delris.operationsOnStrings.reverseString;
 
 import java.util.Arrays;
 
