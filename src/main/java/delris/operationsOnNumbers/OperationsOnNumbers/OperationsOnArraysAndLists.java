@@ -19,9 +19,7 @@ public class OperationsOnArraysAndLists {
         System.arraycopy(array1, 0, mergedArray, 0, array1.length);
         System.arraycopy(array2, 0, mergedArray, array1.length, array2.length);
         Arrays.sort(mergedArray);
-        System.out.println(Arrays.toString(mergedArray));
         if(mergedArray.length%2 == 0){
-            System.out.println("here");
             return (mergedArray[(mergedArray.length/2)-1] + mergedArray[(mergedArray.length/2)+1])/2.0;
         } else {
             return mergedArray[(mergedArray.length/2)+1];
